@@ -1,6 +1,15 @@
 name: "Test1"
 on: 
   push:
+  
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'debug'
+      tags:
+        description: 'Test scenario tags'
 
 jobs:
   validation:

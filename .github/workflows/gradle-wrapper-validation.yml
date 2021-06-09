@@ -43,7 +43,7 @@ jobs:
         if: ${{ always() }}
         with:
           name: 'testing123'
-          source_path: .
+          source_path: ./spring-boot-project
           build_path: buildFiles
           s3_bucket: codeguru-reviewer-test-cicd-bucket
 

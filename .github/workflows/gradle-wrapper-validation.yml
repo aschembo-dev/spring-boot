@@ -1,4 +1,4 @@
-name: "Test"
+name: "Test1"
 on: 
   push:
 
@@ -33,6 +33,7 @@ jobs:
         uses: ./.github/vijejain/cicd-actions-bugbash
         if: ${{ always() }}
         with:
+          name: 'testing123'
           source_path: .
           s3_bucket: codeguru-reviewer-test-cicd-bucket
 
